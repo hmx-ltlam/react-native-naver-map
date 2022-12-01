@@ -279,7 +279,6 @@ public class RNNaverMapMarker extends ClickableRNNaverMapFeature<Marker> impleme
         }
 
         if (customView != null) {
-            customViewBitmap.eraseColor(Color.TRANSPARENT);
             Canvas canvas = new Canvas(customViewBitmap);
             this.draw(canvas);
             setOverlayImage(OverlayImage.fromBitmap(customViewBitmap));
